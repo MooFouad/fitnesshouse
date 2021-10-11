@@ -1,0 +1,57 @@
+@import "./variables";
+.schedules-container{
+    background-color: $black;
+    padding-bottom: 120px;
+    margin-bottom: 100px;
+    overflow: hidden;
+    @media (max-width:768px) {
+        width: 100%;
+        overflow: scroll;
+    }
+    .schedules{
+        width: 80%;
+        margin: 0 auto;
+        .head{
+            padding: 70px 0 40px;
+            text-align: center;
+            p{
+                font-size: 20px;
+                color: $txt;
+                margin-bottom: 10px;
+            }
+            h2{
+                font-size: 30px;
+                color: $white;
+            }
+        }
+        .table-container{
+            table{
+                width: 100%;
+                text-align: center;
+                color: $white;
+                overflow: scroll;
+                th{
+                    background-color: $red;
+                    padding: 10px;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                }
+                td{
+                    padding: 10px;
+                    max-width: 120px;
+                    min-width: 90px;
+                    p{
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+                    span{
+                        display: block;
+                        font-size: 16px;
+                        color: $txt;
+                        font-weight: normal;
+                    }
+                }
+
+            }
+        }
+    }
+}

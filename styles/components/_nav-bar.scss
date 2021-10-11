@@ -1,0 +1,88 @@
+@import "./variables";
+div.nav-center.show{
+    height: auto;
+    transition: all .5s ease;
+    }
+.nav-center{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #171819;
+    color: $white;
+    padding: 15px 0;
+    position: fixed;
+    transition: all .5s ease;
+    z-index: 11;
+    width: 100%;
+    @media (max-width:768px) {
+        flex-wrap: wrap;
+        height: 65px;
+        overflow: hidden;
+        text-align: center;
+        z-index: 10;
+    }
+    
+    h1{
+        cursor: pointer;
+        font-size: 30px;
+        transition: all .3s ease;
+        &:hover{color: $red;}
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .nav-toggle{
+        @media (max-width:768px) {
+            display: block;
+        }
+        display: none;
+        .toggle-icon{
+            display: block;
+            margin: 5px auto;
+            color: $red;
+            background-color: $red;
+            height: 3px;
+            width: 30px;
+            cursor: pointer;
+        }
+    }
+    .links{
+        @media (max-width:768px) {
+            width: 100%;
+            display: block;
+            margin: 10px;
+        }
+        display: flex;
+        list-style: none;
+        transition: all .5s ease;
+        a{
+            @media (max-width:768px) {
+                width: 100%;
+                margin: 0 auto;
+            }
+            text-decoration: none;
+            padding: 0 15px;
+            color: $white;
+            transition: all .3s ease;
+            text-transform: uppercase;
+            &:hover{
+            color: $red;
+            }
+        }
+        
+    }
+    .icons{
+        @media (max-width:768px) {
+            width: 100%;
+            display: block;
+        }
+        @media (max-width:880px)and (min-width:769px) {
+            display: none;
+        }
+        i{
+            padding: 0 10px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: all .3s ease;
+            &:hover{color: $red;}
+        }
+    }
+}

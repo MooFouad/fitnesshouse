@@ -1,0 +1,78 @@
+@import "./variables";
+
+.classes-container{
+    @media (max-width:768px) {
+        width: 100%;
+    }
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 80px;
+    .head{
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 70px;
+        p{
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: $txt;
+        }
+        h2{
+            font-size: 30px;
+            font-weight: bold;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    }
+    .cards{
+        @media (max-width:768px) {
+            width: 100%;
+            flex-direction: column;
+        }
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 80px;
+        .card{
+            @media (max-width:768px) {
+                width: 85%;
+                margin: 0 auto;
+                margin-bottom: 30px;
+            }
+            width: 30%;
+            box-shadow: 1px 1px 10px rgb(221, 213, 213);
+            img{
+                width: 100%;
+            }
+            .card-body{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px;
+                .left{
+                    p{
+                        font-weight: bold;
+                        color: $txt;
+                        span{
+                            color: $gray;
+                        }
+                    }
+                }
+                .right{
+                    color: $white;
+                    background-color: $red;
+                    border-radius: 50%;
+                    font-size: 20px;
+                    font-weight: bold;
+                    padding: 10px;
+                }
+            }
+            .lorem{
+                font-size: 18px;
+                color: $txt;
+                padding: 0 20px 20px 20px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+        }
+    }
+}
